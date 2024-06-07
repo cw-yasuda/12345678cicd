@@ -1,0 +1,12 @@
+name: Deploy Jobs For PR
+
+on:
+  pull_request:
+    branches:
+      - develop
+
+jobs:
+  develop:
+    name: Develop Action
+    uses: ./.github/workflows/reuse.yml
+    secrets: inherit
