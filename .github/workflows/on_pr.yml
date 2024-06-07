@@ -10,3 +10,5 @@ jobs:
     name: Develop Action
     uses: ./.github/workflows/reuse.yml
     secrets: inherit
+    with:
+      env_name: develop
